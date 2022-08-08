@@ -1,0 +1,68 @@
+
+body {
+    background-color: #d3d3d3;
+    min-height: 100vh;
+}
+
+.section {
+    padding: 1rem 1.5rem;
+    max-width: 750px;
+    margin: auto;
+}
+.songpa{
+    height: 150px;
+}
+.is-sparta {
+    color: #21BBEF !important;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 200px;
+}
+.card-body{
+    height: 200px;
+}
+
+.button.is-sparta {
+    background-color: #21BBEF;
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.button.is-sparta.is-outlined {
+    background-color: transparent;
+    border-color: #21BBEF;
+    color: #21BBEF !important;
+}
+
+.modal-content {
+    width: 600px;
+    max-width: 80%;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.image img {
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+.mycomment {
+    color: gray;
+    font-family: 'Gamja Flower', cursive;
+}
+
+.mycards {
+    margin: auto;
+    height: 100px;
+    width: 90%;
+}
+
+
+
+
+
+
