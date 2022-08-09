@@ -56,10 +56,7 @@ function get_posts(username) {
                     <p class="mycomment" >설명: ${comment}</p>
                     <p class="mycomment">작성자: ${username2}</p>
                     <p class="mycomment">작성일: ${time_now}</p>
-                     <nav id="btns-me" class="level is-mobile" style="margin-top:2rem">
-                    <button style="width: 45%" class="button is-danger" onclick="post_delete('${post["date"]}')">삭제</button>
-                    <button style="width: 45%" onclick='$("#post-edit").addClass("is-active")' class="button button is-info">수정</button>
-                    </nav>
+                     
                     </div>
                      </div>
                         </div>`
@@ -171,9 +168,6 @@ function post_modify(id){
     let comment = $('#textarea-about2').val()
     let file = $('#input-pic2')[0].files[0]
     let form_data = new FormData()
-    alert(id2)
-    alert(title)
-    alert(comment)
     form_data.append("file_give", file)
     form_data.append("title_give", title)
     form_data.append("comment_give", comment)

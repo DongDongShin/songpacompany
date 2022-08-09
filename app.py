@@ -187,7 +187,6 @@ def modify_posts():
         date_receive = request.form["id_give"]
         print(username)
         print(date_receive)
-        db.posts.update_one({'date': date_receive}, {'$set': {'age': 19}})
         db.posts.update_one({'date': date_receive}, {'$set': {'title': title_receive}})
         db.posts.update_one({'date': date_receive}, {'$set': {'comment': comment_receive}})
 
@@ -199,6 +198,8 @@ def modify_posts():
             mytime = now.strftime('%Y-%m-%d-%H-%M-%S')
             file_path = f"post_pics/{mytime}.{extension}"
             file.save("./static/" + file_path)
+
+
             db.posts.update_one({'date': date_receive}, {'$set': {'filename': filename}})
             db.posts.update_one({'date': date_receive}, {'$set': {'post_pic_real': file_path}})
         return jsonify({"result": "success", "msg": "해당 게시물을 수정 했습니다."})

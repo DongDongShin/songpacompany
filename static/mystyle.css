@@ -1,7 +1,7 @@
 
 body {
     background-color: #d3d3d3;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 .section {
@@ -52,7 +52,7 @@ input::-webkit-calendar-picker-indicator {
 }
 .mycomment {
     color: gray;
-    font-family: 'Gamja Flower', cursive;
+    font-family: 'Gamja Flower';
 }
 
 .mycards {
